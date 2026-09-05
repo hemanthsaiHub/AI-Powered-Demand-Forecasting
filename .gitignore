@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# MLflow's local tracking DB is excluded -- it's tied to whatever MLflow
+# version created it, and committing it risks the same
+# "alembic revision not found" crash across different machines/versions.
+# Everyone should generate their own via `python src/train.py`.
+mlflow.db
+mlruns/
+
+# Note: data/*.csv and models/*.joblib etc. are intentionally NOT
+# ignored -- they're committed so Streamlit Cloud / Render can deploy
+# directly without needing a training step on the server.
+
+# Env
+.env
+venv/
+.venv/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/

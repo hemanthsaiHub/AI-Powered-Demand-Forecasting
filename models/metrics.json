@@ -1,0 +1,11 @@
+{
+  "xgboost": {
+    "mae": 13.506759500647924,
+    "rmse": 21.939826338166267,
+    "mape": 0.19934265747453944
+  },
+  "baseline_exponential_smoothing": {
+    "mae": 40.21440593412062
+  },
+  "improvement_over_baseline": 0.6641313184440734
+}

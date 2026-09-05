@@ -1,0 +1,22 @@
+{
+  "xgboost_model": {
+    "holding_cost": 18595.17,
+    "stockout_cost": 616422.63,
+    "total_cost": 635017.8,
+    "n_days": 19320
+  },
+  "naive_baseline": {
+    "holding_cost": 35565.71,
+    "stockout_cost": 1096100.1,
+    "total_cost": 1131665.8,
+    "n_days": 19320
+  },
+  "savings_vs_naive_baseline": 496648.0,
+  "savings_pct": 0.4389,
+  "estimated_annual_savings": 1125941.12,
+  "assumptions": {
+    "holding_cost_per_unit_per_day": 0.15,
+    "stockout_margin_loss_per_unit": 4.5,
+    "note": "Illustrative unit economics -- swap in your real company's numbers."
+  }
+}
