@@ -164,12 +164,12 @@ with tab3:
         fig4.update_layout(height=400, yaxis_title="Cost ($)")
         st.plotly_chart(fig4, use_container_width=True)
 
-        st.info(
-            f"**Estimated annual savings: ${cost['estimated_annual_savings']:,.0f}** "
-            f"(based on holding cost of ${cost['assumptions']['holding_cost_per_unit_per_day']}/unit/day "
-            f"and stockout margin loss of ${cost['assumptions']['stockout_margin_loss_per_unit']}/unit — "
-            f"adjust these in `src/cost_savings.py` to match real unit economics)."
-        )
+    st.info(
+        f"**Estimated annual savings: \\${cost['estimated_annual_savings']:,.0f}** "
+        f"(based on holding cost of \\${cost['assumptions']['holding_cost_per_unit_per_day']}/unit/day "
+        f"and stockout margin loss of \\${cost['assumptions']['stockout_margin_loss_per_unit']}/unit — "
+        f"adjust these in `src/cost_savings.py` to match real unit economics)."
+    )
 
 # ---------------- Tab 4: Explainability ----------------
 with tab4:
